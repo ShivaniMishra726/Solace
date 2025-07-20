@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solace - AI Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #333;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .quote {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: bold;
+      width: 220px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .quote1 {
+      top: 5%;
+      left: 5%;
+    }
+
+    .quote2 {
+      top: 10%;
+      right: 5%;
+    }
+
+    .quote3 {
+      bottom: 20%;
+      left: 5%;
+    }
+
+    .quote4 {
+      bottom: 25%;
+      right: 5%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Motivational Quotes -->
+  <div class="quote quote1">“Peace comes from within.”</div>
+  <div class="quote quote2">“Every day is a second chance.”</div>
+  <div class="quote quote3">“Let your soul breathe.”</div>
+  <div class="quote quote4">“Stillness is where clarity lives.”</div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Solace</h1>
+    <p>Conversational AI Agent</p>
+    <elevenlabs-convai agent-id="agent_01k01x89v5e4mb4nqz8e02w58m"></elevenlabs-convai>
+  </div>
+
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async></script>
+</body>
+</html>
+
